@@ -17,5 +17,6 @@ export default {};
   display: flex;
   box-shadow: 0 -3px 10px rgba(20, 20, 20, 0.1);
   background-color: #fff;
+  z-index: 10;
 }
 </style>
