@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app v-cloak">
     <maintab></maintab>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -17,4 +19,7 @@ export default {
 
 <style>
 @import "assets/css/base.css";
+[v-cloak] {
+  display: none !important;
+}
 </style>

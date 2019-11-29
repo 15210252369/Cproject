@@ -17,6 +17,7 @@ export default {
   mounted() {
     this.scroll = new BScroll(this.$refs.wrapper, {
       probeType: 3,
+      click: true,
       pullUpLoad: true
     });
     this.scroll.on("scroll", position => {
@@ -28,10 +29,16 @@ export default {
   },
   methods: {
     scrollTop() {
-      this.scroll.scrollTo(0, 0, 400);
+      this.scroll.scrollTo(0, 0, 500);
     },
     scrollFinish() {
       this.scroll.finishPullUp();
+    },
+    refresh() {
+      this.scroll.refresh();
+    },
+    getScrollY() {
+      return this.scroll ? this.scroll.y : null;
     }
   }
 };

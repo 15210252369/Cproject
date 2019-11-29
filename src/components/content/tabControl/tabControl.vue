@@ -30,13 +30,13 @@ export default {
   methods: {
     toggle(index) {
       this.currentIndex = index;
-      this.$emit('tabControl',index)
+      this.$emit("tabControl", index);
     }
   }
 };
 </script>
 
-<style>
+<style scope>
 .tabControl {
   display: flex;
   height: 40px;

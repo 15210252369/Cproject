@@ -18,11 +18,6 @@ export default {};
 
 <style>
 .navbar {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   height: 44px;
   box-shadow: 0 1px 1px rgba(100, 100, 100, 0.2);
@@ -37,4 +32,5 @@ export default {};
   line-height: 44px;
   text-align: center;
 }
+
 </style>
